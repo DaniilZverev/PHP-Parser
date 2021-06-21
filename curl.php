@@ -83,5 +83,5 @@ while ($lab[$index] != null) {
 
 echo print_r($arrayToJson);
 
-file_put_contents('file.json', json_encode($arrayToJson));
+file_put_contents('file.json', json_encode($arrayToJson, JSON_UNESCAPED_UNICODE));
 //readfile('file.json');
